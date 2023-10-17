@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#containers{
+  margin: 0.5rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.container > div{
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #ffffff;
+}
+
+.settings >h1{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+}
+
+.product{
+    padding: 3rem 8rem;
+    max-height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__details{
+    position: relative;
+    margin-left: 1rem;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .text-overlay > h3{
+    margin: 2px;
+  }
+
+  .rectangle {
+    width: 150px;
+    height: 100px;
+    background-color: #b9b9b9;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #868686;
+  }
+
+  .additions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
+  }
+
+  .little__boxes{
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .box{
+    width: 10px;
+    height: 10px;
+    background: #f9f9f9;
+    border: 1px solid grey;
+  }
+
+   /* ----------edit part-------------- */
+
+   .heading{
+    margin: 0.7rem;
+   }
+
+   .product__modify{
+    max-height: 34.5rem;
+   }
+
+  .tshirts{
+    width: 50px;
+    margin: 5px;
+  }
+
+  .hr{
+    border: 1px solid rgb(140, 140, 140);
+    width: 90%;
+    margin: auto;
+  }
+
+  .upload__button{
+    background: rgb(4, 154, 154);
+    margin-bottom: 0.6rem;
+    padding: 10px;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 12px;
+    color: white;
+  }
+
+  .detail__heads{
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+
+  .grey-text{
+    color: #868686;
+    font-size: 12px;
+    margin: 1rem 10rem 1rem 10rem;
+  }
+
+  .text-modify{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .detail__text-color{
+    display: flex;
+    flex-direction:row;
+  }
+
+  .circle{
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid rgb(145, 145, 145);
+    margin: 3px;
+  }
+
+  .choose__color{
+    font-size: 12px;
+  }
+
+/*-----tablet media queries--------*/
+@media screen and (max-width: 1024px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .container >div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+
+
+
+/*-----mobile media queries--------*/
+@media screen and (max-width: 600px){
+    .container{
+        gap: 1rem;
+    }
+    .container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
